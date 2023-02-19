@@ -6,12 +6,15 @@ Android Shared Preferences class in Java language + Single UI using some of its 
 2. **Use the following in the place you want to use SharedPrefs**; substitute the i/p parameters by their equivalent in your project
 ** **
     // Making an instance of the module
-    SharedPrefs sharedPrefs =new SharedPrefs(getApplicationContext(),"sharedPrefsName");
+    SharedPrefs.init(getContenxt())
         
     // Writing in sharedPrefs
-    sharedPrefs.write("isLoggedIn",false);
+    SharedPrefs.write(key,value);
     
     
     // Reading from sharedPrefs
-    sharedPrefs.readMap("isLoggedIn",false);
+    SharedPrefs.readMap(key,value);
+    
+    // Deleting from sharedPrefs
+    SharedPrefs.remove(key);
 - - - - 
