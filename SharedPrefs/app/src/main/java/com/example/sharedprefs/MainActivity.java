@@ -15,10 +15,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SharedPrefs sharedPrefs =new SharedPrefs(getApplicationContext(),"sharedPrefsName");
-        sharedPrefs.write("isLoggedIn",false);
-        sharedPrefs.write("numberOfUsage",0);
-        sharedPrefs.readMap("isLoggedIn",false);
+        SharedPrefs.init(getContext);
+        SharedPrefs.write("isLoggedIn",false);
+        SharedPrefs.write("numberOfUsage",0);
+        SharedPrefs.readMap("isLoggedIn",false);
+        SharedPrefs.remove("numberOfUsage");
 
         /* ToPrint SharedPrefs XML file path */
         File f = getDatabasePath("sharedPrefsName");
