@@ -21,3 +21,6 @@ Android Shared Preferences class in Java language + Single UI using some of its 
     // Deleting from sharedPrefs
     SharedPrefs.remove(key);
 - - - - 
+## **To Track the actual place of the sharedPrefs xml file**
+![Screenshot (760)](https://user-images.githubusercontent.com/92642692/220457185-cf1aafc7-c007-40f1-a81b-38f0e2bdf98f.png)
+![Screenshot (761)](https://user-images.githubusercontent.com/92642692/220457191-72ff911e-a7a5-40e3-be5d-3894dfdb8bcc.png)
