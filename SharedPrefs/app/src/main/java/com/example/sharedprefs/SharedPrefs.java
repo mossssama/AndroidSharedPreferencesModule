@@ -9,7 +9,8 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
 
-private static SharedPreferences sharedPrefs =null;
+public class SharedPrefs {
+    private static SharedPreferences sharedPrefs =null;
     private static String SHARED_PREFS_NAME="EnterYourDesiredNameHere";                                    /*xml file name*/
     private static SharedPreferences.Editor prefsEditor;
 
