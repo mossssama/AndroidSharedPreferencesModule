@@ -19,6 +19,10 @@ public class SharedPrefs {
             sharedPrefs=context.getSharedPreferences(SHARED_PREFS_NAME,Activity.MODE_PRIVATE);
         }
     }
+    
+    public static SharedPreferences getSharedPreferences() {
+        return sharedPrefs;
+    }
 
     //Overloaden Reading Methods
     public static String readMap(String key, String defValue)          { return sharedPrefs.getString(key, defValue); }
